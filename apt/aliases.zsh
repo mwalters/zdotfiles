@@ -1,0 +1,5 @@
+alias acs="apt-cache search"
+alias aup="sudo apt-get update && sudo apt-get dist-upgrade"
+alias aclean="sudo apt-get autoremove"
+alias ai="sudo apt-get install"
+alias arm="sudo apt-get remove"

@@ -1,0 +1,23 @@
+export ZSH=~/.oh-my-zsh
+ZSH_THEME="bira"
+HYPHEN_INSENSITIVE="true"
+export UPDATE_ZSH_DAYS=7
+COMPLETION_WAITING_DOTS="true"
+HIST_STAMPS="yyyy/mm/dd"
+
+plugins=(gitfast capistrano command-not-found composer aws history jsontools vagrant wd z extract npm)
+
+source $ZSH/oh-my-zsh.sh
+
+EXTENSIONS="zsh"
+for src (~/.zdotfiles/**/*.zsh) {
+    source "$src"
+}
+
+# If localrc exists, then load it
+if [ -f $HOME/.localrc ]; then
+    source $HOME/.localrc
+fi
+
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/bin/liquidprompt/liquidprompt
