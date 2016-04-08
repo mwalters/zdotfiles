@@ -11,5 +11,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias path='echo -e ${PATH//:/\\n}'
 alias querydomain='host -a '
+alias cpwd="pwd | xsel -ib"
+alias bandwidth="nload -u K"
+
 alias rmdsstore='find . -name .DS_Store -exec rm {} \;'
+
 alias j="wd"
