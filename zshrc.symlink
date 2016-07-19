@@ -21,5 +21,13 @@ fi
 
 export PATH=~/.zdotfiles/bin:$PATH
 
+[[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
+
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/bin/liquidprompt/liquidprompt
+
+if [ -f /var/run/reboot-required ]; then
+    echo "***"
+    cat /var/run/reboot-required
+    echo "***"
+fi
