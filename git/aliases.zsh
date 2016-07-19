@@ -1,5 +1,5 @@
 git config --global core.editor "subl -n -w"
-export EDITOR="subl -w"
+export EDITOR="subl -n -w"
 
 # Git aliases
 alias gs='git status -sb'
@@ -9,13 +9,13 @@ alias gbl='git branch -v'
 alias gco='git checkout'
 alias gd='git diff'
 alias gunstage='git reset HEAD'
-
-alias gwtf='$HOME/.dotfiles/git/git-wtf'
+alias gf='git fetch -t -v -p --progress --all'
+alias gfetch='gf'
 
 # Branching
 alias gbranch-name='git rev-parse --abbrev-ref HEAD'
-alias gpublish='git push -u origin $(git gbranch-name)'
-alias gunpublish='git push origin :$(git gbranch-name)'
+alias gpublish='git push -u origin $(gbranch-name)'
+alias gunpublish='git push origin :$(gbranch-name)'
 
 # Next one requires `xsel` to be installed
 alias gbcp="git rev-parse --abbrev-ref HEAD | tr -d '\n' | xsel -ib"
