@@ -3,7 +3,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias ln='ln -i'
 
-alias ls="ls --color=auto"
 alias l='ls -l -G'
 alias ll='ls -lAh -G'
 alias lw='ls -A -G'

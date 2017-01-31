@@ -5,7 +5,7 @@ export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy/mm/dd"
 
-plugins=(gitfast capistrano command-not-found composer aws history jsontools vagrant wd z extract npm colorize cp)
+plugins=(gitfast command-not-found history jsontools vagrant wd extract colorize cp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,9 +19,7 @@ if [ -f $HOME/.localrc ]; then
     source $HOME/.localrc
 fi
 
-export PATH=~/.zdotfiles/bin:$PATH
-
-[[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
+export PATH=~/.zdotfiles/bin:$PATH:~/bin
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/bin/liquidprompt/liquidprompt

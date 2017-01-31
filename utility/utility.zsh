@@ -1,5 +1,5 @@
 # Set editor of choice
-alias o='subl'
+alias o='atom'
 
 # Helpful aliases
 alias rzsh='source ~/.zshrc'
@@ -11,7 +11,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias path='echo -e ${PATH//:/\\n}'
 alias querydomain='host -a '
-alias cpwd="pwd | xsel -ib"
+alias cpwd="pwd | pbcopy"
 alias bandwidth="nload -u K"
 
 alias rmdsstore='find . -name .DS_Store -exec rm {} \;'

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-branch=$(git rev-parse --abbrev-ref HEAD)
-
-git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%cn]%Creset' --abbrev-commit --date=relative origin/$branch..HEAD

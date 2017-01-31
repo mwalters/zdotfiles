@@ -1,10 +1,10 @@
-git config --global core.editor "subl -n -w"
-export EDITOR="subl -n -w"
+git config --global core.editor "atom --wait"
+export EDITOR="atom --wait"
 
 # Git aliases
 alias gs='git status -sb'
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%cn]%Creset' --abbrev-commit --date=relative | more"
+alias gl="git log --graph --oneline --decorate"
 alias gbl='git branch -v'
 alias gco='git checkout'
 alias gd='git diff'
@@ -16,9 +16,7 @@ alias gfetch='gf'
 alias gbranch-name='git rev-parse --abbrev-ref HEAD'
 alias gpublish='git push -u origin $(gbranch-name)'
 alias gunpublish='git push origin :$(gbranch-name)'
-
-# Next one requires `xsel` to be installed
-alias gbcp="git rev-parse --abbrev-ref HEAD | tr -d '\n' | xsel -ib"
+alias gbcp="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 
 # Mark a file as "assume unchanged", which means that Git will treat it
 # as though there are no changes to it even if there are. Useful for
