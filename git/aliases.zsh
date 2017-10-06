@@ -12,6 +12,8 @@ alias gunstage='git reset HEAD'
 alias gf='git fetch -t -v -p --progress --all'
 alias gfetch='gf'
 
+alias goutgoing='git log origin/master..HEAD --oneline'
+
 # Branching
 alias gbranch-name='git rev-parse --abbrev-ref HEAD'
 alias gpublish='git push -u origin $(gbranch-name)'

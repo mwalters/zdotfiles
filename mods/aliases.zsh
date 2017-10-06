@@ -9,3 +9,9 @@ alias lw='ls -A -G'
 alias ld='ls -l -G | grep "^d"'
 alias ldot='ls -ld .*'
 alias grep='grep --color=auto'
+
+alias tf='terraform'
+
+function npm-exec {
+   $(npm bin)/$@
+}

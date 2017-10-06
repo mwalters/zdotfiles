@@ -1,5 +1,5 @@
 # Set editor of choice
-alias o='atom'
+alias o='atom-beta'
 
 # Helpful aliases
 alias rzsh='source ~/.zshrc'
