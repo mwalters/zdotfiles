@@ -1,14 +1,8 @@
 export ZSH=~/.oh-my-zsh
-ZSH_THEME="bira"
 HYPHEN_INSENSITIVE="true"
 export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy/mm/dd"
-
-source $HOME/.zdotfiles/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen apply
 
 plugins=(gitfast command-not-found history jsontools vagrant wd extract colorize cp)
 
@@ -26,11 +20,14 @@ fi
 
 export PATH=~/.zdotfiles/bin:/usr/local/sbin:$PATH:~/bin
 
-# Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/bin/liquidprompt/liquidprompt
-
 if [ -f /var/run/reboot-required ]; then
     echo "***"
     cat /var/run/reboot-required
     echo "***"
 fi
+
+source $HOME/.zdotfiles/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme refined
+antigen apply
