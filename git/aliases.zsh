@@ -14,6 +14,8 @@ alias gfetch='gf'
 
 alias goutgoing='git log origin/master..HEAD --oneline'
 
+alias gunpushed='branch=$(git rev-parse --abbrev-ref HEAD) && git diff origin/$branch..HEAD'
+
 # Branching
 alias gbranch-name='git rev-parse --abbrev-ref HEAD'
 alias gpublish='git push -u origin $(gbranch-name)'
