@@ -18,7 +18,7 @@ if [ -f $HOME/.localrc ]; then
     source $HOME/.localrc
 fi
 
-export PATH=/usr/local/sbin:$PATH:~/bin:~/go/bin
+export PATH=/usr/local/sbin:$PATH:~/bin:~/go/bin:/usr/bin/git 
 
 if [ -f /var/run/reboot-required ]; then
     echo "***"
