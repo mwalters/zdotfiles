@@ -1,5 +1,7 @@
-# Remove dangling images
-alias dkrmdangle="docker images -q --filter dangling=true | xargs docker rmi"
+# Remove dangling dangled dangles
+alias dkrmdanglei="docker images -q --filter dangling=true | xargs docker rmi"
+alias dkrmdanglev="docker volume ls -qf 'dangling=true' | xargs docker volume rm"
+alias dkrmdangle="dkrmdanglev && dkrmdanglei"
 
 # Prune containers; remove containers that are stopped
 alias dkp="docker container prune -f"
