@@ -3,6 +3,8 @@ alias dkrmdanglei="docker images -q --filter dangling=true | xargs docker rmi"
 alias dkrmdanglev="docker volume ls -qf 'dangling=true' | xargs docker volume rm"
 alias dkrmdangle="dkrmdanglev && dkrmdanglei"
 
+alias dk="docker"
+
 # Prune containers; remove containers that are stopped
 alias dkp="docker container prune -f"
 
