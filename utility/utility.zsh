@@ -1,5 +1,5 @@
 # Set editor of choice
-alias o='atom'
+alias o="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Helpful aliases
 alias rzsh='source ~/.zshrc'
