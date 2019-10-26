@@ -13,22 +13,22 @@ See `LICENSE` file for license information.
 
 ## iTerm2 Utilities
 * imgcat filename
-  Displays the image inline.
+  * Displays the image inline.
 * imgls
-  Shows a directory listing with image thumbnails
+  * Shows a directory listing with image thumbnails
 * it2attention start|stop|fireworks
-  Gets your attention
+  * Gets your attention
 * it2check
-  Checks if the terminal is iTerm2
+  * Checks if the terminal is iTerm2
 * it2copy [filename]
-  Copies to the pasteboard
+  * Copies to the pasteboard
 * it2dl filename
-  Downloads the specified file, saving it in your Downloads folder.
+  * Downloads the specified file, saving it in your Downloads folder.
 * it2setcolor ...
-  Changes individual color settings or loads a color preset
+  * Changes individual color settings or loads a color preset
 * it2setkeylabel ...
-  Changes Touch Bar function key labels
+  * Changes Touch Bar function key labels
 * it2ul
-  Uploads a file
+  * Uploads a file
 * it2universion
-  Sets the current unicode version
+  * Sets the current unicode version
