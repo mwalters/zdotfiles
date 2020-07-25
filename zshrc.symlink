@@ -32,7 +32,8 @@ fi
 source $HOME/.zdotfiles/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen theme refined
+antigen theme agnoster
+#antigen theme bira
 antigen apply
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

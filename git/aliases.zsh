@@ -1,4 +1,4 @@
-git config --global core.editor "atom --wait"
+git config --global core.editor "subl -n -w"
 export EDITOR="atom --wait"
 
 # Git aliases
