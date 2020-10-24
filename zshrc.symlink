@@ -21,7 +21,7 @@ if [ -f $HOME/.localrc ]; then
     source $HOME/.localrc
 fi
 
-export PATH=/usr/local/sbin:$PATH:~/bin:~/go/bin:/usr/bin/git
+export PATH=/usr/local/sbin:$PATH:~/bin:~/go/bin:/usr/bin/git:~/.local/bin
 
 if [ -f /var/run/reboot-required ]; then
     echo "***"
@@ -38,5 +38,6 @@ antigen apply
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
