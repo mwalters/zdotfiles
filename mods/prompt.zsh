@@ -51,13 +51,15 @@ git_info() {
 
 PROMPT=$'$(ssh_info) %B%(?.%F{green}✓.%F{red}X %?)%f%b %B%F{215}%~%f%b%f %B%#%b '
 
+SHOW_AWS_PROMPT=true
+
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '%F{5}[%F{2}%b%F{5}]%f %m%u%c'
 precmd() {
     vcs_info
 }
 setopt prompt_subst
-RPROMPT='$(git_info) ${vcs_info_msg_0_}%*'
+RPROMPT='$(aws_prompt_info) $(git_info) ${vcs_info_msg_0_}%*'
 
 zsh_command_time() {
     if [ -n "$ZSH_COMMAND_TIME" ]; then
