@@ -9,6 +9,7 @@ alias ~='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias cd..="cd .."
 alias path='echo -e ${PATH//:/\\n}'
 alias querydomain='host -a '
 alias cpwd="pwd | pbcopy"
