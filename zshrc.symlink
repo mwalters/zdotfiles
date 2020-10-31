@@ -4,10 +4,16 @@ export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy/mm/dd"
 
-HISTSIZE=1000
-SAVEHIST=1000
-
-plugins=(gitfast history)
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+SAVEHIST=20000
+HISTSIZE=50000
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+bindkey $'^[[A' up-line-or-search    # up arrow
+bindkey $'^[[B' down-line-or-search  # down arrow
 
 source $ZSH/oh-my-zsh.sh
 
