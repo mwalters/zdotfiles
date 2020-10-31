@@ -1,5 +1,5 @@
 git config --global core.editor "subl -n -w"
-git config pull.rebase true
+git config --global pull.rebase true
 export EDITOR="subl -n -w"
 
 # Git aliases
