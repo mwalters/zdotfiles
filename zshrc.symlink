@@ -15,6 +15,10 @@ setopt HIST_VERIFY
 bindkey $'^[[A' up-line-or-search    # up arrow
 bindkey $'^[[B' down-line-or-search  # down arrow
 
+# git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+# git clone git@github.com:scriptingosx/mac-zsh-completions.git "$ZSH_CUSTOM/plugins/mac-zsh-completions"
+plugins=(gitfast history zsh-completions aws brew colorize mac-zsh-completions zsh-interactive-cd thefuck)
+
 source $ZSH/oh-my-zsh.sh
 
 EXTENSIONS="zsh"
