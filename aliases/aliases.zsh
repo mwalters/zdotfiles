@@ -18,3 +18,5 @@ function ip {
     echo "External: `curl -s http://ipecho.net/plain`"
   echo "WiFi    : `ifconfig | grep inet | grep broadc | cut -d ' ' -f 2`"
 }
+
+alias abrew='cat ~/.oh-my-zsh/plugins/brew/README.md'
