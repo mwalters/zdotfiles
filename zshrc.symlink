@@ -49,3 +49,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(pyenv init -)"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+# brew install thefuck
+
+setopt NO_CASE_GLOB
+setopt NUMERIC_GLOB_SORT
+setopt AUTO_CD
+setopt CORRECT
+setopt CORRECT_ALL
