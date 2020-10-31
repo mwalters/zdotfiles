@@ -1,5 +1,6 @@
 git config --global core.editor "subl -n -w"
-export EDITOR="atom --wait"
+git config pull.rebase true
+export EDITOR="subl -n -w"
 
 # Git aliases
 alias gs='git status -sb'
